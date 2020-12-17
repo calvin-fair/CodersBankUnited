@@ -4,7 +4,7 @@ import controller.Banker;
 
 public class Bank extends javax.swing.JFrame {
 
-	// Variables declaration - do not modify                     
+	// Variables                  
     private javax.swing.JPanel Background;
     private javax.swing.JLabel investPrecentTickLbl;
     private javax.swing.JPanel accountInfoPnl;
@@ -85,20 +85,20 @@ public class Bank extends javax.swing.JFrame {
         });
 
         logo.setBackground(new java.awt.Color(242, 242, 247));
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\CFair\\Desktop\\CBU\\Logos\\Logo@0,5x.png")); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\CFair\\Desktop\\CBU\\Logos\\Logo@0,5x.png")); 
 
         titleLbl.setBackground(new java.awt.Color(242, 242, 247));
-        titleLbl.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        titleLbl.setFont(new java.awt.Font("Segoe UI", 1, 24)); 
         titleLbl.setForeground(new java.awt.Color(196, 175, 222));
         titleLbl.setText("WELCOME TO CODERS BANK UNITED");
 
         suggestionPnl.setBackground(new java.awt.Color(51, 4, 107));
 
-        suggestionPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        suggestionPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         suggestionPnlLbl.setForeground(new java.awt.Color(196, 175, 222));
         suggestionPnlLbl.setText("Account Suggestions");
 
-        suggestionValue.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        suggestionValue.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         suggestionValue.setForeground(new java.awt.Color(196, 175, 222));
         suggestionValue.setText("<html><p>Hello " + banker.getUser() + " we don't currently have any suggestions for you.</p></html>");
         suggestionValue.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -132,11 +132,11 @@ public class Bank extends javax.swing.JFrame {
         checkingPnl.setForeground(new java.awt.Color(255, 255, 255));
         checkingPnl.setPreferredSize(new java.awt.Dimension(70, 80));
 
-        checkPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        checkPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         checkPnlLbl.setForeground(new java.awt.Color(196, 175, 222));
         checkPnlLbl.setText("Checking");
 
-        checkingValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        checkingValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); 
         checkingValue.setForeground(new java.awt.Color(196, 175, 222));
         checkingValue.setText(banker.getValue(5000, 5000));
 
@@ -164,14 +164,14 @@ public class Bank extends javax.swing.JFrame {
         );
 
         savingPnl.setBackground(new java.awt.Color(51, 4, 107));
-        savingPnl.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        savingPnl.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         savingPnl.setPreferredSize(new java.awt.Dimension(60, 80));
 
-        savingsPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        savingsPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         savingsPnlLbl.setForeground(new java.awt.Color(196, 175, 222));
         savingsPnlLbl.setText("Savings");
 
-        savingValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        savingValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); 
         savingValue.setForeground(new java.awt.Color(196, 175, 222));
         savingValue.setText(banker.getValue(20000, 30000));
 
@@ -201,15 +201,15 @@ public class Bank extends javax.swing.JFrame {
         investmentPnl.setBackground(new java.awt.Color(51, 4, 107));
         investmentPnl.setPreferredSize(new java.awt.Dimension(211, 80));
 
-        investmentsPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        investmentsPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         investmentsPnlLbl.setForeground(new java.awt.Color(196, 175, 222));
         investmentsPnlLbl.setText("Investments");
 
-        investmentValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        investmentValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); 
         investmentValue.setForeground(new java.awt.Color(196, 175, 222));
         investmentValue.setText(banker.getValue(90000, 60000));
 
-        investPrecentTickLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        investPrecentTickLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         investPrecentTickLbl.setForeground(new java.awt.Color(51, 153, 0));
         investPrecentTickLbl.setText("(+ 0.0%)");
 
@@ -241,18 +241,18 @@ public class Bank extends javax.swing.JFrame {
         );
 
         cryptoPnl.setBackground(new java.awt.Color(51, 4, 107));
-        cryptoPnl.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        cryptoPnl.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         cryptoPnl.setPreferredSize(new java.awt.Dimension(211, 80));
 
-        cryptoPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cryptoPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         cryptoPnlLbl.setForeground(new java.awt.Color(196, 175, 222));
         cryptoPnlLbl.setText("Cryptocurrency");
 
-        cryptoValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        cryptoValue.setFont(new java.awt.Font("Segoe UI", 0, 24)); 
         cryptoValue.setForeground(new java.awt.Color(196, 175, 222));
         cryptoValue.setText(banker.getValue(50000, 40000));
 
-        cryptoPrecentTickLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        cryptoPrecentTickLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         cryptoPrecentTickLbl.setForeground(new java.awt.Color(51, 153, 0));
         cryptoPrecentTickLbl.setText("(+ 0.0%)");
 
@@ -286,20 +286,20 @@ public class Bank extends javax.swing.JFrame {
         accountInfoPnl.setBackground(new java.awt.Color(51, 4, 107));
         accountInfoPnl.setPreferredSize(new java.awt.Dimension(270, 0));
 
-        accountPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        accountPnlLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         accountPnlLbl.setForeground(new java.awt.Color(196, 175, 222));
         accountPnlLbl.setText("Account Information");
 
-        accountNumLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        accountNumLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         accountNumLbl.setForeground(new java.awt.Color(196, 175, 222));
         accountNumLbl.setText("Account #: ***-***-****");
 
-        routingNumLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        routingNumLbl.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         routingNumLbl.setForeground(new java.awt.Color(196, 175, 222));
 		routingNumLbl.setText("Routing #: ****-****-****-****");
 
         showToggleBtn.setBackground(new java.awt.Color(51, 4, 107));
-        showToggleBtn.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        showToggleBtn.setFont(new java.awt.Font("Tahoma", 0, 8)); 
         showToggleBtn.setForeground(new java.awt.Color(196, 175, 222));
         showToggleBtn.setText("Show");
         showToggleBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -340,7 +340,7 @@ public class Bank extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        creditsLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        creditsLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         creditsLbl.setForeground(new java.awt.Color(196, 175, 222));
         creditsLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         creditsLbl.setText("Developed by Calvin Fair");

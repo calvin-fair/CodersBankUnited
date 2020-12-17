@@ -2,7 +2,7 @@ package view;
 
 public class Login extends javax.swing.JFrame {
 	
-	// Variables declaration - do not modify                     
+	// Variables                   
     private javax.swing.JPanel Background;
     private javax.swing.JLabel Icon;
     private javax.swing.JButton LoginBtn;
@@ -10,9 +10,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel Title;
     private javax.swing.JTextField UsernameTB;
 
-    /**
-     * Creates new form Login
-     */
     public Login() {
         initComponents();
     }
@@ -35,15 +32,15 @@ public class Login extends javax.swing.JFrame {
 
         Background.setBackground(new java.awt.Color(55, 50, 61));
 
-        Icon.setIcon(new javax.swing.ImageIcon("C:\\Users\\CFair\\Desktop\\CBU\\Logos\\Logo@2x.png")); // NOI18N
+        Icon.setIcon(new javax.swing.ImageIcon("C:\\Users\\CFair\\Desktop\\CBU\\Logos\\Logo@2x.png")); 
         Icon.setMaximumSize(new java.awt.Dimension(200, 210));
 
         Title.setBackground(new java.awt.Color(242, 242, 247));
-        Title.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Title.setFont(new java.awt.Font("Segoe UI", 1, 24)); 
         Title.setForeground(new java.awt.Color(196, 175, 222));
         Title.setText("Coders Bank United");
 
-        UsernameTB.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        UsernameTB.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         UsernameTB.setText("Username...");
         UsernameTB.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -55,7 +52,7 @@ public class Login extends javax.swing.JFrame {
         });
         
 
-        PasswordTB.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        PasswordTB.setFont(new java.awt.Font("Segoe UI", 0, 12)); 
         PasswordTB.setText("Password...");
         PasswordTB.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -66,7 +63,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        LoginBtn.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        LoginBtn.setFont(new java.awt.Font("Tahoma", 0, 12)); 
         LoginBtn.setText("Login");
         LoginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
