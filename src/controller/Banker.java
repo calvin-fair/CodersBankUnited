@@ -11,7 +11,6 @@ public class Banker {
 	private Timestamp timemarker;
 	private String user;
 	
-
 	public void setUser(String userA) {
 		user = userA;
 	}
@@ -102,29 +101,5 @@ public class Banker {
 			Double precent = (lasVal/curVal);
 			return ("(- " + String.format("%.2f", precent * 100) + ")");
 		}
-	}
-
-	public static void main(String[] args) {
-		// This main is used for testing.
-		Banker banker = new Banker();
-		String checking = banker.getValue(5000, 5000); // Checking
-		String saving = banker.getValue(20000, 30000); // Saving
-		String investment = banker.getValue(90000, 60000); // Investment
-		String cryptocurrency = banker.getValue(50000, 40000); // Cryptocurrency
-		
-		System.out.println(checking); // Checking
-		System.out.println(saving); // Saving
-		System.out.println(investment); // Investment
-		System.out.println(cryptocurrency); // Cryptocurrency
-		
-		String poc = banker.getPrecentageChange(checking, saving);
-		System.out.println(poc);
-		
-		banker.setAccountNum();
-		banker.setRoutingNum();
-		System.out.println(banker.accountNumber);
-		System.out.println(banker.routingNumber);
-		
-		banker.setTimeMarker();
 	}
 }
