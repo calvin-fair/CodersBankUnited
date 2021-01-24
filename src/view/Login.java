@@ -1,5 +1,7 @@
 package view;
 
+import javax.swing.JOptionPane;
+
 public class Login extends javax.swing.JFrame {
 	
 	// Variables                   
@@ -32,7 +34,7 @@ public class Login extends javax.swing.JFrame {
 
         Background.setBackground(new java.awt.Color(55, 50, 61));
 
-        Icon.setIcon(new javax.swing.ImageIcon("C:\\Users\\CFair\\Desktop\\CBU\\Logos\\Logo@2x.png")); 
+        Icon.setIcon(new javax.swing.ImageIcon(".\\logos\\Logo@2x.png")); 
         Icon.setMaximumSize(new java.awt.Dimension(200, 210));
 
         Title.setBackground(new java.awt.Color(242, 242, 247));
@@ -116,9 +118,14 @@ public class Login extends javax.swing.JFrame {
     }                       
 
     private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {
-    	Bank bank = new Bank(UsernameTB.getText());
-    	bank.setVisible(true);
-    	super.dispose();
+    	if(!(UsernameTB.getText().equals("Username...")) && !(UsernameTB.getText().isBlank())) {
+    		Bank bank = new Bank(UsernameTB.getText());
+        	bank.setVisible(true);
+        	super.dispose();
+    	} else {
+    		JOptionPane.showMessageDialog(null, "Invalid username.", "Error!", JOptionPane.ERROR_MESSAGE);
+    	}
+    	
     }                                        
     
     private void UsernameTBFocusGained(java.awt.event.FocusEvent evt) {                                       

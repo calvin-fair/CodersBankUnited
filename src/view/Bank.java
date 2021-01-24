@@ -85,7 +85,7 @@ public class Bank extends javax.swing.JFrame {
         });
 
         logo.setBackground(new java.awt.Color(242, 242, 247));
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\CFair\\Desktop\\CBU\\Logos\\Logo@0,5x.png")); 
+        logo.setIcon(new javax.swing.ImageIcon(".\\logos\\Logo@0,5x.png")); 
 
         titleLbl.setBackground(new java.awt.Color(242, 242, 247));
         titleLbl.setFont(new java.awt.Font("Segoe UI", 1, 24)); 
